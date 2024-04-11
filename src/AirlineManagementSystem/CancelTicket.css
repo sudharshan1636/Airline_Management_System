@@ -1,0 +1,22 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28-Nov-2021, 11:24:09 pm
+    Author     : patil
+*/
+.button{
+    -fx-background-color: #1976D2;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: orange;
+}
+#CancelTicketLabel{
+    -fx-text-fill: gold;
+    -fx-font-weight: bold;
+}
+.root{
+    -fx-background-color: grey;
+}

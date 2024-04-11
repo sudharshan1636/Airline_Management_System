@@ -1,0 +1,19 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26-Nov-2021, 1:57:23 am
+    Author     : patil
+*/
+.button:hover{
+    -fx-background-color: orange;
+}
+#HomeTab1{
+    -fx-background-color: grey;
+}
+#HomeTab1Label{
+    -fx-text-fill: gold;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+}

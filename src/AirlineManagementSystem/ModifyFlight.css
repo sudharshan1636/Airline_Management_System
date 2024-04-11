@@ -1,0 +1,23 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27-Nov-2021, 2:18:33 pm
+    Author     : patil
+*/
+.button{
+    -fx-background-color: #1976D2;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: orange;
+}
+#ModifyFlightLabel{
+    -fx-text-fill: gold;
+    -fx-font-weight: bold;
+}
+.root{
+    -fx-background-color: grey;
+}
+

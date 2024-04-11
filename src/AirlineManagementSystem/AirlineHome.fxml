@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AirlineManagementSystem.AirlineHomeController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="624.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuClose" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuRemoveFlight" text="Remove Flight" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuModifyFlight" text="Modify Flight" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuCancelTicket" text="Cancel Ticket" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuPassengerDetails" text="Show Passenger Details" />
+                        <MenuItem mnemonicParsing="false" onAction="#menuPaymentDetails" text="Show Payment Details" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <right>
+            <VBox prefHeight="400.0" prefWidth="124.0" stylesheets="@Home.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="HomeAddFlightButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#addFlight" prefHeight="37.0" prefWidth="124.0" text="Add Flight">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@AddFlight.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="HomeRemoveFlightButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#removeFlight" prefHeight="45.0" prefWidth="124.0" text="Remove Flight">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@RemoveFlight.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="HomeBookTicketButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#bookTicket" prefHeight="62.0" prefWidth="126.0" text="Book Ticket">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@BookTicket.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="HomeCancelTicketButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#cancelTicket" prefHeight="62.0" prefWidth="126.0" text="Cancel Ticket">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@CancelTicket.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="HomeModifyFlightButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#modifyFlight" prefHeight="62.0" prefWidth="126.0" text="Modify Flight">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ModifyFlight.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="HomePaymentDetailsButton" contentDisplay="TOP" layoutX="10.0" layoutY="259.0" mnemonicParsing="false" onAction="#paymentDetails" prefHeight="62.0" prefWidth="126.0" text="Payment Details">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@PaymentDetails.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="HomePassengerDetailsButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#passengerDetails" prefHeight="62.0" prefWidth="126.0" text="Passenger Details">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@PassengerDetails.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab fx:id="HomeTab1Welcome" text="Welcome">
+                  <content>
+                    <AnchorPane fx:id="HomeTab1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@Home.css">
+                           <children>
+                              <ImageView fx:id="HomeTab1Image" fitHeight="172.0" fitWidth="301.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@WelcomeAirline.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="HomeTab1Label" layoutY="186.0" prefHeight="222.0" prefWidth="499.0" text="Welcome To SP Airline Management System" textAlignment="CENTER" wrapText="true" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="HomeTab2ShowFlightDetails" onSelectionChanged="#showFlightDetails" text="Show Flight Details">
+                  <content>
+                    <AnchorPane fx:id="HomeTab2RootPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="HomeTab2Table" layoutX="41.0" layoutY="25.0" prefHeight="408.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="HomeTab2FlightCodeColumn" prefWidth="75.0" text="Flight Code" />
+                                  <TableColumn fx:id="HomeTab2NameColumn" prefWidth="104.0" text="Name" />
+                                    <TableColumn fx:id="HomeTab2SourceColumn" prefWidth="72.00006103515625" text="Source" />
+                                    <TableColumn fx:id="HomeTab2DestinationColumn" text="Destination" />
+                                    <TableColumn fx:id="HomeTab2CapacityColumn" prefWidth="68.0" text="Capacity" />
+                                    <TableColumn fx:id="HomeTab2DateOfJourneyColumn" prefWidth="100.79998779296875" text="Date of Journey" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,35 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28-Nov-2021, 1:12:26 pm
+    Author     : patil
+*/
+.button{
+    -fx-background-color: #1976D2;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: orange;
+}
+#BookTicketLabel{
+    -fx-text-fill: gold;
+    -fx-font-weight: bold;
+}
+.root{
+    -fx-background-color: grey;
+}
+#BookTicketPassengerDetailsLabel{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#BookTicketPaymentDetailsLabel{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
